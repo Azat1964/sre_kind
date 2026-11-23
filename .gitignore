@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code (настройки пользователя, кроме общих для проекта)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.out
+*.bak
+
+# kubeconfig — не хранить локальные доступы в репозитории
+kubeconfig
+*.kubeconfig
+kubeconfig.yaml
+
+# Секреты — никогда не коммитить
+.env
+*.secret.yaml
+secrets/
+
+# Артефакты сборки и кэш
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+
+# Отчёты и данные экспериментов (большие файлы)
+results/*.png
+results/*.csv
+!results/.gitkeep
